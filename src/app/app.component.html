@@ -1,3 +1,26 @@
-
-<h1 nz-typography>Ramen Rose</h1>
-
+<div>
+  <nz-layout>
+    <app-header></app-header>
+  </nz-layout>
+  <nz-layout>
+    <app-side-bar></app-side-bar>
+  </nz-layout>
+  <nz-layout>
+    <nz-layout>
+      <app-bread-crumbs></app-bread-crumbs>
+    </nz-layout>
+    <nz-content>
+      <div nz-row>
+        <div nz-col>
+          <app-recipe-list></app-recipe-list>
+        </div>
+        <div nz-col>
+          <app-shopping-list></app-shopping-list>
+        </div>
+      </div>
+    </nz-content>
+  </nz-layout>
+  <nz-layout>
+    <app-footer></app-footer>
+  </nz-layout>
+</div>

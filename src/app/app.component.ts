@@ -8,6 +8,8 @@ import {Component, Input} from '@angular/core';
 
 export class AppComponent {
    title = 'Ramen Rose';
+  isCollapsed: boolean = false;
+
  hello():void{
     console.log("hello")
   }

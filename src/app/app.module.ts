@@ -23,9 +23,14 @@ import {ShoppingListComponent} from "./components/shopping-list/shopping-list/sh
 import { RecipeListComponent } from './components/recipe-book/recipe-list/recipe-list.component';
 import { RecipesComponent } from './components/recipe-book/recipes/recipes.component';
 import { RecipeDetailComponent } from './components/recipe-book/recipe-detail/recipe-detail.component';
-import { RecipeComponent } from './components/recipe-book/recipe/recipe.component';
+import { RecipeComponent } from './components/recipe-book/recipe-list/recipe/recipe.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import {NzBreadCrumbModule} from "ng-zorro-antd/breadcrumb";
+import { SideBarComponent } from './components/layout/side-bar/side-bar.component';
+import { BreadCrumbsComponent } from './components/layout/bread-crumbs/bread-crumbs.component';
+import {NzMenuModule} from "ng-zorro-antd/menu";
+import {NzImageModule} from "ng-zorro-antd/image";
 
 registerLocaleData(en);
 
@@ -40,7 +45,9 @@ registerLocaleData(en);
     RecipeDetailComponent,
     RecipeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SideBarComponent,
+    BreadCrumbsComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +64,10 @@ registerLocaleData(en);
     NzFormModule,
     NzCardModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NzBreadCrumbModule,
+    NzMenuModule,
+    NzImageModule
   ],
   providers: [
      { provide: NZ_I18N, useValue: en_US }
