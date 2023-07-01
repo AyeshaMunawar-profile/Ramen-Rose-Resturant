@@ -31,6 +31,7 @@ import { SideBarComponent } from './components/layout/side-bar/side-bar.componen
 import { BreadCrumbsComponent } from './components/layout/bread-crumbs/bread-crumbs.component';
 import {NzMenuModule} from "ng-zorro-antd/menu";
 import {NzImageModule} from "ng-zorro-antd/image";
+import {NzAnchorModule} from "ng-zorro-antd/anchor";
 
 registerLocaleData(en);
 
@@ -67,7 +68,8 @@ registerLocaleData(en);
     FormsModule,
     NzBreadCrumbModule,
     NzMenuModule,
-    NzImageModule
+    NzImageModule,
+    NzAnchorModule
   ],
   providers: [
      { provide: NZ_I18N, useValue: en_US }

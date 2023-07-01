@@ -13,6 +13,35 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.title{
-  color: orange;
+.title {
+  font-size: 2rem;
+  color: #DC2F02;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  color: #E85D04;
+}
+
+.paragraph {
+  color: #4f4f4f;
+  font-size: 1.3rem;
+}
+
+.nz-header {
+  padding: 0;
+}
+
+.nz-footer {
+  text-align: center;
+}
+
+.ant-menu,
+.ant-menu-submenu{
+  background: transparent !important;
+}
+
+.ant-menu,
+.ant-menu-submenu ul{
+  background: transparent !important;
 }
