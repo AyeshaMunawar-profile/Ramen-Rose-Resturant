@@ -1,1 +1,5 @@
-<p>recipe-list works!</p>
+<div class="recipes-list-container">
+  <ul *ngFor="let recipe of recipesList" class="recipe-list-box">
+    <app-recipe [recipeDetails]="recipe"></app-recipe>
+  </ul>
+</div>

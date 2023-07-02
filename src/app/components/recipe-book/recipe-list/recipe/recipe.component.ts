@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-recipe',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe.component.scss']
 })
 export class RecipeComponent implements OnInit {
-
+  @Input() recipeDetails:any;
+  public fileImageDefaultPath:string= "../../../../../assets/food_images/"
   constructor() { }
 
   ngOnInit(): void {
+    this.fileImageDefaultPath= this.fileImageDefaultPath + this.recipeDetails.field5 + ".jpg"
   }
 
 }

@@ -1,0 +1,12 @@
+.recipe-list-box {
+  width: 100%;
+  padding: 15px 10px;
+  list-style: none;
+}
+
+.recipes-list-container {
+  height: 60vh;
+  overflow-y: scroll;
+  border: 2px solid #b7b7b7;
+  margin: 20px 15px;
+}
